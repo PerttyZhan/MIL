@@ -1,0 +1,89 @@
+@mixin border-radius($radius:5px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+
+body,html{
+  height:100%;
+}
+
+.edit{
+  width: 100%;
+  display: table;
+  height: 100%;
+
+  .left{
+    display: table-cell;
+    width: 50px;
+    background: #d7d7d7;
+
+    .logo{
+      padding:5px 0 0 5px;
+    }
+
+    .function{
+
+
+      ul{
+        padding-left: 0;
+
+        li{
+          list-style-type: none;
+          padding: 0.5em 0;
+          width: 100%;
+          text-align: center;
+
+          &.active{
+            background: #fff;
+          }
+        }
+
+      }
+    }
+  }
+
+  .center{
+    display: table-cell;
+    background: #fff;
+    vertical-align: top;
+
+    .topbar{
+      height: 20px;
+      border-top:1px solid #787878;
+      border-bottom: 1px solid #787878;
+    }
+
+    .title{
+      padding:1em 0 1em 1em;
+      border-bottom:1px solid #787878;
+
+      .new-artcle{
+        padding:0.2em 0.5em;
+        border:1px solid #787878;
+        @include border-radius;
+        font-size: 0.8em;
+        color: #666;
+        text-decoration: none;
+        float: right;
+        margin-right: 2em;
+      }
+    }
+
+    .title-list{
+
+      .artcle{
+        padding:1em 0 1em 1.5em;
+        border-bottom:1px solid #787878;
+      }
+    }
+  }
+
+  .right{
+    display: table-cell;
+    width: 50%;
+    background: #00f;
+  }
+
+}

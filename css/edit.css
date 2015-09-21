@@ -1,0 +1,53 @@
+body, html {
+  height: 100%; }
+
+.edit {
+  width: 100%;
+  display: table;
+  height: 100%; }
+  .edit .left {
+    display: table-cell;
+    width: 50px;
+    background: #d7d7d7; }
+    .edit .left .logo {
+      padding: 5px 0 0 5px; }
+    .edit .left .function ul {
+      padding-left: 0; }
+      .edit .left .function ul li {
+        list-style-type: none;
+        padding: 0.5em 0;
+        width: 100%;
+        text-align: center; }
+        .edit .left .function ul li.active {
+          background: #fff; }
+  .edit .center {
+    display: table-cell;
+    background: #fff;
+    vertical-align: top; }
+    .edit .center .topbar {
+      height: 20px;
+      border-top: 1px solid #787878;
+      border-bottom: 1px solid #787878; }
+    .edit .center .title {
+      padding: 1em 0 1em 1em;
+      border-bottom: 1px solid #787878; }
+      .edit .center .title .new-artcle {
+        padding: 0.2em 0.5em;
+        border: 1px solid #787878;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        font-size: 0.8em;
+        color: #666;
+        text-decoration: none;
+        float: right;
+        margin-right: 2em; }
+    .edit .center .title-list .artcle {
+      padding: 1em 0 1em 1.5em;
+      border-bottom: 1px solid #787878; }
+  .edit .right {
+    display: table-cell;
+    width: 50%;
+    background: #00f; }
+
+/*# sourceMappingURL=edit.css.map */

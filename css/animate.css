@@ -12,35 +12,35 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
+.animated05 {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 .animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.animated2 {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.animateDelay0{
-  -webkit-animation-delay:0;
-  animation-delay:0;
+
+.animateDelay05{
+  -webkit-animation-delay:.5s;
+  animation-delay:.5s;
 }
 .animateDelay1{
-  -webkit-animation-delay:800ms;
-  animation-delay:800ms;
+  -webkit-animation-delay:1s;
+  animation-delay:1s;
 }
 
 .animateDelay2{
-  -webkit-animation-delay:1.6s;
-  animation-delay:1.6s;
+  -webkit-animation-delay:1.5s;
+  animation-delay:1.5s;
 }
 .animateDelay3{
-  -webkit-animation-delay:2s;
-  animation-delay:2s;
+  -webkit-animation-delay:2.5s;
+  animation-delay:2.5s;
 }
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;

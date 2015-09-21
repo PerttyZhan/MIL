@@ -90,18 +90,17 @@ body{
     margin-top:290px;
 }
 #focus h1{
-    width: 550px;
-    height: 52px;
-    margin:0 auto 30px;
-    background: url('http://p6.qhimg.com/d/inn/a9fc324e/uxc_logo.png') 0 -105px no-repeat;
-    overflow:hidden;
-    text-indent:-9999em;
+    margin: 0 auto 30px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 4px;
 }
 #focus p{
     margin-bottom:45px;
 }
 #focus .shequ{
-    margin-bottom:130px;
+    margin-bottom:80px;
      opacity: 0;
 }
 #focus .ico{
@@ -139,6 +138,7 @@ body{
     .cat-item{
         float: left;
         margin-right: 53px;
+        opacity: 0;
         &:hover{
             a{
                 background-position-y:-114px;
@@ -207,7 +207,7 @@ body{
         margin-right: 13px;
         border:1px solid #afb6c5;
         transition:.2s all ease-in-out;
-
+        opacity: 0;
         &:hover{
               box-shadow: 4px 6px 8px rgba(0,0,0,.5);
         }
@@ -326,6 +326,7 @@ body{
     background: #414858 url('http://p6.qhimg.com/d/inn/8aae056a/uxc.png') right 0 no-repeat;
     .intro-show{
         width: 50%;
+        opacity: 0;
         h1{
             font-size: 42px;
             margin-bottom:20px;
@@ -348,21 +349,37 @@ body{
 
 #join{
     padding:120px 0 ;
+    text-align:center;
     h1{
-        text-align: center;
         font-size: 36px;
         color:#444;
         margin-bottom:40px;
           font-weight: 400;
+          opacity: 0;
     }
     p{
         display: block;
-          margin-bottom: 80px;
         line-height: 2;
         font-size: 13px;
         color:#7a7b7e;
-        text-align: center;
+        width: 75%;
+  margin: 0 auto;
+  opacity: 0;
+
     }
+   .join-me{
+    display: inline-block;
+    margin:40px auto;
+    background-color:#a2a5ae;
+    padding:10px 15px;
+    border-radius:5px;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition:1s all ease;
+    transition-delay: .5s;
+    -webkit-transform:rotateX(90deg);
+   }
     .join-type{
         width: 100%;
         text-align: center;
@@ -580,11 +597,19 @@ body{
     z-index:100;
     height: 100%;
     width:100%;
-    display: none;
+    -webkit-transform:scale(0);
+    transform:scale(0);
 }
 
-
-#shadow{
+#wrap{
+    position:fixed;
+    top:0;  
+    left: 0;
+    z-index:100;
+    height: 100%;
+    width:100%;
+}
+#shadow,#wrap{
 
     .main-form{
          width:800px;
@@ -736,7 +761,30 @@ body{
     }
 }
 
-
+#wrap{
+    h2{
+        text-indent: 0;
+        text-align: center;
+    }
+    .in{
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        margin:0 auto;
+        color:#000;
+        margin:10px 0;
+    }
+    .main-form{
+        border:1px solid #ccc;
+    }
+    .form-left{
+        border:none;
+        padding:0;
+    }
+    .from-submit{
+        text-align: center;
+    }
+}
 @-webkit-keyframes scaleandrotate{
     from{
         -webkit-transform:rotate(720deg) scale(0,0);

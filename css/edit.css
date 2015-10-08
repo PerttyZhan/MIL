@@ -23,7 +23,9 @@ body, html {
   .edit .center {
     display: table-cell;
     background: #fff;
-    vertical-align: top; }
+    vertical-align: top;
+    width: 20%;
+    border-right: 1px solid #787878; }
     .edit .center .topbar {
       height: 20px;
       border-top: 1px solid #787878;
@@ -47,7 +49,22 @@ body, html {
       border-bottom: 1px solid #787878; }
   .edit .right {
     display: table-cell;
-    width: 50%;
-    background: #00f; }
+    vertical-align: top; }
+    .edit .right .topbar {
+      height: 20px;
+      border-top: 1px solid #787878;
+      border-bottom: 1px solid #787878; }
+    .edit .right .title {
+      padding: 1em 0 1em 1em;
+      border-bottom: 1px solid #787878; }
+      .edit .right .title input {
+        width: 60%;
+        padding: 0.5em; }
+    .edit .right .attr {
+      padding: 1em 0 1em 1.5em;
+      border-bottom: 1px solid #787878; }
+      .edit .right .attr span {
+        float: right;
+        margin-right: 2em; }
 
 /*# sourceMappingURL=edit.css.map */

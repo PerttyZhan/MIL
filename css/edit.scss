@@ -48,6 +48,8 @@ body,html{
     display: table-cell;
     background: #fff;
     vertical-align: top;
+    width: 20%;
+    border-right: 1px solid #787878;
 
     .topbar{
       height: 20px;
@@ -82,8 +84,34 @@ body,html{
 
   .right{
     display: table-cell;
-    width: 50%;
-    background: #00f;
+    vertical-align: top;
+
+    .topbar{
+      height: 20px;
+      border-top:1px solid #787878;
+      border-bottom: 1px solid #787878;
+    }
+
+    .title{
+      padding:1em 0 1em 1em;
+      border-bottom:1px solid #787878;
+
+      input{
+        width:60%;
+        padding:0.5em;
+      }
+
+    }
+
+    .attr{
+      padding:1em 0 1em 1.5em;
+      border-bottom:1px solid #787878;
+
+      span{
+        float: right;
+        margin-right: 2em;
+      }
+    }
   }
 
 }

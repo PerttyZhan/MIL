@@ -4,9 +4,14 @@
   -webkit-border-radius: $radius;
 }
 
+a{
+  text-decoration: none;
+
+}
 
 body,html{
   height:100%;
+
 }
 
 .edit{
@@ -17,10 +22,12 @@ body,html{
   .left{
     display: table-cell;
     width: 50px;
-    background: #d7d7d7;
+    background: #2a2a2a;
+    color: #fff;
 
     .logo{
-      padding:5px 0 0 5px;
+      text-align: center;
+      padding: 1em 0.5em;
     }
 
     .function{
@@ -31,12 +38,33 @@ body,html{
 
         li{
           list-style-type: none;
-          padding: 0.5em 0;
           width: 100%;
           text-align: center;
+          display: block;
+          font-size: 16px;
+          line-height: 25px;
+          box-sizing: border-box;
+
+          a{
+            display: block;
+            color: #999;
+            padding: 0.5em;
+
+          }
 
           &.active{
-            background: #fff;
+            background: #e78170;
+
+            a{
+              color: #fff;
+            }
+          }
+
+          &:hover{
+            background: #f49484;
+            a{
+              color: #fff;
+            }
           }
         }
 
@@ -48,6 +76,8 @@ body,html{
     display: table-cell;
     background: #fff;
     vertical-align: top;
+    width: 25%;
+    border-right: 1px solid #787878;
 
     .topbar{
       height: 20px;
@@ -56,34 +86,130 @@ body,html{
     }
 
     .title{
-      padding:1em 0 1em 1em;
+      padding: 0.7em 0 0.5em 1em;
       border-bottom:1px solid #787878;
 
-      .new-artcle{
-        padding:0.2em 0.5em;
-        border:1px solid #787878;
-        @include border-radius;
-        font-size: 0.8em;
-        color: #666;
-        text-decoration: none;
-        float: right;
-        margin-right: 2em;
+      a{
+        color:#555;
+        font-size: 12px;
       }
     }
 
     .title-list{
 
       .artcle{
-        padding:1em 0 1em 1.5em;
-        border-bottom:1px solid #787878;
+
+        max-height: 90px;
+        height: 90px;
+        border-bottom: 1px solid #d9d9d9;
+        background-color: transparent;
+        box-sizing: border-box;
+        position: relative;
+
+        &.active{
+          background-color: #d1c091;
+          color: #eeeeee;
+          text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+          box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+          -webkit-transition: background-color 0.3s linear;
+          -moz-transition: background-color 0.3s linear;
+          -o-transition: background-color 0.3s linear;
+          transition: background-color 0.3s linear;
+
+          i,a{
+            color: #fff;
+          }
+        }
+
+        i{
+          color: #c6b281;
+          font-size: 2em;
+          position: absolute;
+          top: 0.8em;
+          left: 0.3em;
+        }
+
+        a{
+          color:#555;
+          padding: 1em 0.5em 1em 3em;
+          display: block;
+          width:100%;
+          height: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 18px;
+          font-weight: normal;
+          vertical-align: top;
+          box-sizing: border-box;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+
+
+        }
+
       }
     }
   }
 
   .right{
     display: table-cell;
-    width: 50%;
-    background: #00f;
+    vertical-align: top;
+
+    .topbar{
+      height: 20px;
+      border-top:1px solid #787878;
+      border-bottom: 1px solid #787878;
+    }
+
+    .title{
+      
+      border-bottom:1px solid #787878;
+      position: relative;
+
+      input{
+        width: 100%;
+        padding: 20px 4em 10px 20px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #d9d9d9;
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        box-sizing: border-box;
+
+        &:focus{
+          outline:none;
+        }
+      }
+
+      button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 5em;
+        height: 100%;
+        border: none;
+      }
+
+    }
+
+    .attr{
+      padding:1em 0 1em 1.5em;
+      border-bottom:1px solid #787878;
+
+      span{
+        float: right;
+        margin-right: 2em;
+      }
+    }
   }
 
 }
